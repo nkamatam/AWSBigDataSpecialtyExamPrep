@@ -4,7 +4,7 @@
 
 * Underlying storage and processing nodes of DynamoDB
 
-* Initially one table equates to one partition
+* Initially one table equates to one partition by default
 
 * Initially all the data in the table is stored on that partition
 
@@ -36,9 +36,9 @@
 
 * Data is distributed based on partition / hash key
 
-* Think of a table of tests that hold records, where test ID is the partition key.  Each record has information about a test and a student, both with their own unique ID - given enough data (over 10 GB) you’ll need to have an additional partition added
+* Think of a table of Tests that hold records, where TestID is the partition key.  Each record has information about a test and a student, both with their own unique ID - given enough data (over 10 GB) you’ll need to have an additional partition added
 
-* All data for a given test ID (partition key) is bound to a single partition, so you’ll only find student / test records for test ID 12345 on a single partition.  
+* All data for a given Test ID (partition key) is bound to a single partition, so you’ll only find student / test records for test ID 12345 on a single partition.  
     
 * By adding partitions and spreading data between them, you can scale almost infinitely
 

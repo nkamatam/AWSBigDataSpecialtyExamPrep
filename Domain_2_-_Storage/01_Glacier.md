@@ -9,13 +9,9 @@
 * Vault Lock - can use console, API or CLI
 
     * Deploy and enforce controls for a vault with a vault lock policy
-
     * Policies can be locked from editing
-
     * Policies cannot be changed after locking
-
     * Enforce compliance controls
-
     * Policies created using IAM
 
 * [http://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock.html](http://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock.html)
